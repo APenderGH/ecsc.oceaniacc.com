@@ -1,52 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-	<meta name="generator" content="Hugo 0.165.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Team Oceania" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="/style.css" />
-
-    <meta name="theme-color" content="#f8f3e9" />
-  </head>
-  <body>
-    <nav>
-      <ul id="leading-nav">
-        <li>
-          <a href="/">
-            <img class="logo" src="/icons/skippy.png" />
-            <span class="hidden-on-mobile">Team Australia</span>
-          </a>
-        </li>
-      </ul>
-      <ul id="trailing-nav">
-        <li>
-          <a href="/players">
-            Players
-          </a>
-        </li>
-        <li>
-          <a href="https://discord.com/invite/yq5anhRAJP">
-            <img class="icon" src="/icons/fontawesome/discord.svg" />
-            Discord
-          </a>
-        </li>
-        <li>
-          <a href="mailto:sponsor@oceaniacc.com">
-            <img class="icon" src="/icons/fontawesome/envelope.svg" />
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <main>
+{{ define "main" }}
   <section id="hero-section">
     <div class="row">
       <img class="skippy-flank" src="icons/skippy.png" />
@@ -108,18 +60,18 @@
 
   <section id="sponsors-section">
     <h2 class="sponsor-title">Sponsors</h2>
-    
+    <!-- <h3 class="sponsor-gold">Gold</h3> -->
     <div class="card-grid">
       <div class="sponsor-logo">
         <img class="sponsor-img" src="icons/sponsors/placeholder.jpg" />
       </div>
     </div>
-    
-    
-      
-        
-      
-    
+    <!-- <h3 class="sponsor-silver">Silver</h3> -->
+    <!-- <div class="card-grid"> -->
+      <!-- <div class="sponsor-logo"> -->
+        <!-- <img class="sponsor-img" src="icons/sponsors/placeholder.jpg" /> -->
+      <!-- </div> -->
+    <!-- </div> -->
   </section>
 
   <section id="players-section">
@@ -170,7 +122,4 @@
       </a>
     </div>
   </section>
-
-    </main>
-  </body>
-</html>
+{{ end }}
