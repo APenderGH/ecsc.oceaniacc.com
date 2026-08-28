@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div id="content" style="position: relative;">
+    <img style="position: absolute; left: -10rem" src="/icons/players/{{ .Params.icon }}" class="player-pfp" />
+    <div>
+      <h2 style="margin-bottom: 0.5rem">{{ .Params.handle }}</h2>
+      {{ if .Params.name }}
+        <h3>(aka {{ .Params.name }})</h3>
+      {{ end }}
+    </div>
+    {{ .Content }}
+    <a href="/players">Back to players</a>
+  </div>
+{{ end }}
